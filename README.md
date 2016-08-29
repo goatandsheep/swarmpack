@@ -5,6 +5,7 @@ Use WebTorrents to simulate cdnjs with ability to pull and insert js from pre-sp
 
 1. Download js to localstorage using webtorrent
 2. Script loading from localstorage using basket.js / tap.js
+3. Check for WebRTC compatibility
 
 ##Dependencies
 
