@@ -1,5 +1,6 @@
 # cdnjs-swarm
-Use WebTorrents to simulate cdnjs with ability to pull and insert js from pre-specified sources. You should be able to choose any URL, especially those from [cdnjs.com](https://cdnjs.com).
+
+A client library that uses WebTorrents to distribute javascript to simulate a large CDN, such as cdnjs with ability to pull js from pre-specified sources and insert it into HTML documents. You should be able to choose any URL, especially those from [cdnjs.com](https://cdnjs.com).
 
 ##Requirements
 
