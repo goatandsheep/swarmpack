@@ -13,3 +13,4 @@ A client library that uses WebTorrents to distribute javascript to simulate a la
 * [Basket.js](https://addyosmani.com/basket.js/): single domain
 * [Tap.js](https://bkardell.github.io/tap/): cross-domain
 * [Webtorrent](https://github.com/feross/webtorrent)
+* [Bower](https://bower.io/): how to get the packages you need from the front end
