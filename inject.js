@@ -224,3 +224,5 @@ else {
 // TODO: magnet URI registry
 
 // TODO: image / video streamlining
+
+// TODO: cache with basket.js

@@ -1,4 +1,4 @@
-#swarmpack
+#swarmpack [WIP]
 
 A javascript bundler whose bundle.js contains links to packages, loading them asynchronously and injecting them into the client's DOM in order of dependencies.
 

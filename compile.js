@@ -4,6 +4,54 @@
 // insert npm modules from https://unpkg.com/package@version
 // TODO: if no location for dependency, use cdnjs
 
+// TODO: handle unpkg.com errors
+// -------------
+
+// require(package)
+// ----------------
+/*
+// keep best link on registry
+ 1. check unpkg.com/package/package.min.js
+ 2. check unpkg.com/package/package-min.js
+ 3. check unpkg.com/package/dist/package.min.js
+ 4. check unpkg.com/package/dist/package-min.js
+ 5. check unpkg.com/package for require
+ 6. check cdnjs
+ https://cdnjs.com/libraries/co
+ https://api.cdnjs.com/libraries/co
+ */
+
+// package not found
+// -----------------
+/*
+// https://unpkg.com/double
+Not found: package "double"
+*/
+
+// Package moved
+// -----------------
+
+/*
+// https://unpkg.com/babel
+
+throw new Error("The node API for `babel` has been moved to `babel-core`.");
+*/
+
+// Package contents are elsewhere
+// -----------------
+/*
+// https://unpkg.com/react
+
+'use strict';
+
+module.exports = require('./lib/React');
+*/
+
+
+
+// pre-compiled package.json
+// -------------------------
+
 var packages = [
   {
     "name": "webtorrent@0.97.2",
@@ -28,6 +76,7 @@ var packages = [
 // Find / generate magnet links
 // TODO: generate magnet links
 // TODO: make registry
+//
 
 unction loadjscsstor(fileloc, filetype, filename) {
   // TODO: separate filename@version
