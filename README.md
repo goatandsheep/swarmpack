@@ -25,4 +25,5 @@ Potential:
 * [Tap.js](https://bkardell.github.io/tap/): cross-domain
 * [Webtorrent](https://github.com/feross/webtorrent)
 * [Gulp](http://gulpjs.com/)
+* [Yarn](https://code.facebook.com/posts/1840075619545360/yarn-a-new-package-manager-for-javascript/)
 
