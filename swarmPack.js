@@ -6,6 +6,7 @@
 */
 
 // name: package@version
+// purpose: one-line javascript that calls necessarily dependencies and injects them
 
 var packages = [
   {
@@ -93,6 +94,15 @@ function injectFile(fileurl, filetype, filename) {
       fileref.setAttribute("name", filename);
       makeElement(fileref);
   }
+  else if (filetype=="") {
+    console.log("error");
+  }
+  else {
+    var fileref=document.createElement(filetype);
+    fileref.setAttribute("src", fileurl);
+    fileref.setAttribute("name", filename);
+    makeElement(fileref);
+  }
 
   // TODO: check readyState
   /*
@@ -116,7 +126,7 @@ function loadExtResource(depend) {
     client.responseType = "blob";
     client.onload = function() {
       blobs[depend._id] = client.response;
-      var url = URL.createObjectURL(client.response);
+      var url = (URL || webkitURL).createObjectURL(client.response);
       console.log(url);
       injectFile(url, depend.loader, depend._id);
       console.log("test");

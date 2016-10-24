@@ -117,3 +117,11 @@ function blobToFile(theBlob, fileName){
 
 // Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'null' is therefore not allowed access. The response had HTTP status code 405. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.
 // torrent.addWebSeed(url)
+
+/*
+WebPack modifications:
+
+1. Resolve npm scripts
+2. 
+
+*/

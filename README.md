@@ -21,9 +21,8 @@ You should be able to choose any package, including npm, bower, or even URL, esp
 
 Potential:
 
-* [Basket.js](https://addyosmani.com/basket.js/): single domain
+* [Basket.js](https://addyosmani.com/basket.js/): single domain module caching
 * [Tap.js](https://bkardell.github.io/tap/): cross-domain
-* [Webtorrent](https://github.com/feross/webtorrent)
-* [Gulp](http://gulpjs.com/)
-* [Yarn](https://code.facebook.com/posts/1840075619545360/yarn-a-new-package-manager-for-javascript/)
+* [Webtorrent](https://github.com/feross/webtorrent): sharing
+* [WebPack](https://webpack.github.io/)
 
