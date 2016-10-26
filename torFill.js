@@ -21,9 +21,12 @@ function loadTorResource(element, infohash, cb) {
   // check if blob is already loaded / loading
   if (!blobs.hasOwnProperty(infohash)) {
     var torClient = new WebTorrent()
+    console.log("before: " + infohash)
+    
     torClient.add(infohash, function (torrent) {
-        console.log('murle')
       blobs[infohash] = ""; // marker that indicates file is loading
+      console.log("after: " + infohash)
+      
       // torrent.addWebSeed(depend['location']);  // not sure if we want this
       torrent.on('done', function() {
         // WebTorrents can contain many files. Let's use the first.
@@ -51,9 +54,9 @@ var torSrc = ""
 for(var i=0; i < elements.length; i++){
     var link = elements[i].getAttribute('href')
     if (testRTC()) {
-        // var infohash = elements[i].getAttribute('infohash')
-        var infohash = 'https://webtorrent.io/torrents/sintel.torrent'
-        loadTorResource(infohash, fillSrc)
+        var infohash = elements[i].getAttribute('infohash')
+        // var infohash = 'https://webtorrent.io/torrents/sintel.torrent'
+        loadTorResource(elements[i], infohash, fillSrc)
     }
     else {
         fillSrc(elements[i], link)
