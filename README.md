@@ -6,11 +6,21 @@ You should be able to choose any package, including npm, bower, or even URL, esp
 
 ##Requirements
 
+[ ] express middleware
+    [ ] generate torrent hash
+    [ ] seed torrent
+    [ ] save hash in a database
+    [ ] inject hash into the ejs page when generated
+[x] Check for WebRTC compatibility. If not, download directly from CDN.
+[x] Download media using webtorrent
+
+###Stretch Goals
+
+[ ] Bundler
+
 1. Ability to load the scripts asynchronously using promises
 2. Ability to inject the scripts into the DOM in order of dependencies.
 3. Maintain a registry similar to the bower registry. This registry connects the package name with a link to a cdn and a webtorrent magnet link.
-4. Download js using webtorrent
-5. Check for WebRTC compatibility. If not, download directly from CDN.
 6. Maintain other functionality of webpack
 7. Work with existing webpack plugins
 8. Allow for custom links for js, png's, etc. Generate magnet link for those.
