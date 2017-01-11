@@ -13,6 +13,9 @@ You should be able to choose any package, including npm, bower, or even URL, esp
     [ ] inject hash into the ejs page when generated
 [x] Check for WebRTC compatibility. If not, download directly from CDN.
 [x] Download media using webtorrent
+[ ] Cache blob
+    [ ] http://stackoverflow.com/questions/13966186/how-long-does-a-blob-persist
+    [ ] http://stackoverflow.com/questions/25090716/local-caching-of-blob-html5
 
 ###Stretch Goals
 
