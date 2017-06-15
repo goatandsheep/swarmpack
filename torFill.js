@@ -1,4 +1,5 @@
 // The easiest way to load webpage assets using WebTorrent
+// TODO: turn into NPM package on its own
 
 // quick WebRTC check
 function testRTC() {
@@ -13,10 +14,9 @@ function testRTC() {
 var blobs = [];
 
 function fillSrc(element, source) {
-    element.setAttribute('src', source)
+  element.setAttribute('src', source)
 }
 
-// fetch magnet URI from registry
 function loadTorResource(element, infohash, cb) {
   // check if blob is already loaded / loading
   if (!blobs.hasOwnProperty(infohash)) {
@@ -43,7 +43,7 @@ function loadTorResource(element, infohash, cb) {
     });
   }
   else {
-      cb(element, blobs[infohash])
+    cb(element, blobs[infohash])
   }
 
 }
@@ -52,13 +52,13 @@ function loadTorResource(element, infohash, cb) {
 var elements = document.getElementsByClassName("tormedia")
 var torSrc = ""
 for(var i=0; i < elements.length; i++){
-    var link = elements[i].getAttribute('href')
-    if (testRTC()) {
-        var infohash = elements[i].getAttribute('infohash')
-        // var infohash = 'https://webtorrent.io/torrents/sintel.torrent'
-        loadTorResource(elements[i], infohash, fillSrc)
-    }
-    else {
-        fillSrc(elements[i], link)
-    }
+  var link = elements[i].getAttribute('href')
+  if (testRTC()) {
+    var infohash = elements[i].getAttribute('infohash')
+    // var infohash = 'https://webtorrent.io/torrents/sintel.torrent'
+    loadTorResource(elements[i], infohash, fillSrc)
+  }
+  else {
+    fillSrc(elements[i], link)
+  }
 }

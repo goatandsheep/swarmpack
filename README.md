@@ -4,22 +4,22 @@ A javascript bundler whose bundle.js contains links to packages, loading them as
 
 You should be able to choose any package, including npm, bower, or even URL, especially those from [cdnjs.com](https://cdnjs.com). Bower already has a [large registry of files](https://github.com/bower/registry). The registry would have to be updated to include magnet links, which could be updated every time a package is updated. It should also work regardless of whether or not a browser has WebRTC support.
 
-##Requirements
+## Requirements
 
-[ ] express middleware
-    [ ] generate torrent hash
-    [ ] seed torrent
-    [ ] save hash in a database
-    [ ] inject hash into the ejs page when generated
-[x] Check for WebRTC compatibility. If not, download directly from CDN.
-[x] Download media using webtorrent
-[ ] Cache blob
-    [ ] http://stackoverflow.com/questions/13966186/how-long-does-a-blob-persist
-    [ ] http://stackoverflow.com/questions/25090716/local-caching-of-blob-html5
+- [ ] express middleware
+    - [ ] generate torrent hash
+    - [ ] seed torrent
+    - [ ] save hash in a database
+    - [ ] inject hash into the ejs page when generated
+- [x] Check for WebRTC compatibility. If not, download directly from CDN.
+- [x] Download media using webtorrent
+- [ ] Cache blob
+    - [ ] http://stackoverflow.com/questions/13966186/how-long-does-a-blob-persist
+    - [ ] http://stackoverflow.com/questions/25090716/local-caching-of-blob-html5
 
-###Stretch Goals
+### Stretch Goals
 
-[ ] Bundler
+- [ ] Bundler
 
 1. Ability to load the scripts asynchronously using promises
 2. Ability to inject the scripts into the DOM in order of dependencies.
@@ -30,7 +30,7 @@ You should be able to choose any package, including npm, bower, or even URL, esp
 9. Use [unpkg.com](https://unpkg.com/#/) as CDN for npm packages
 10. Optional web interface to compile bundle.js on github-pages page
 
-##Dependencies
+## Dependencies
 
 Potential:
 

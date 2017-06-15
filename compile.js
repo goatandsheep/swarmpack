@@ -1,4 +1,4 @@
-// compile package.json? Browserify?
+// compile bundle.json? Browserify?
 
 // Dependencies:
 // insert npm modules from https://unpkg.com/package@version
@@ -109,19 +109,13 @@ unction loadjscsstor(fileloc, filetype, filename) {
 
 
 function blobToFile(theBlob, fileName){
-    //A Blob() is almost a File() - it's just missing the two properties below which we will add
-    theBlob.lastModifiedDate = new Date();
-    theBlob.name = fileName;
-    return theBlob;
+  //A Blob() is almost a File() - it's just missing the two properties below which we will add
+  theBlob.lastModifiedDate = new Date();
+  theBlob.name = fileName;
+  return theBlob;
 }
 
 // Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'null' is therefore not allowed access. The response had HTTP status code 405. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.
 // torrent.addWebSeed(url)
 
-/*
-WebPack modifications:
 
-1. Resolve npm scripts
-2. 
-
-*/
