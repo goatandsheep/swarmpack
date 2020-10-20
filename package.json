@@ -1,13 +1,11 @@
 {
-  "name": "chat-example",
-  "version": "0.0.0",
-  "description": "A chat example to showcase how to use `socket.io` with a static `express` server with `async` for control flow.",
-  "main": "server.js",
+  "name": "swarmpack",
+  "version": "0.1.0",
+  "description": "A library to load media on front end using WebTorrent",
+  "main": "index.js",
   "repository": "",
-  "author": "Mostafa Eweda <mo.eweda@gmail.com>",
+  "author": "Kemal Ahmed <goatandsheep@gmail.com>",
   "dependencies": {
-    "async": "~0.2.8",
-    "express": "~3.2.4",
-    "socket.io": "~0.9.14"
+    "webtorrent": "^0.108.6"
   }
 }
